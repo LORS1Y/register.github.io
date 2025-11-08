@@ -16,7 +16,7 @@
         <div class="row">
             <div class="'col">
                         <h1>Форма регистрации</h1>
-        <form action="check.php" method="post">
+        <form action="php/check.php" method="post">
             <input type="text" class="from-control" name="login" id="login" placeholder="Введите логин"><br>
             <input type="text" class="from-control" name="name" id="name" placeholder="Введите Имя"><br>
             <input type="password" class="from-control" name="pass" id="pass" placeholder="Введите пороль"><br>
@@ -25,14 +25,14 @@
     </div>
                 <div class="'col">
                         <h1>Форма авторизации</h1>
-        <form action="auth.php" method="post">
+        <form action="php/auth.php" method="post">
             <input type="text" class="from-control" name="login" id="login" placeholder="Введите логин"><br>
             <input type="password" class="from-control" name="pass" id="pass" placeholder="Введите пороль"><br>
             <button class="btn btn-success" type="submit">Войти</button>
         </form>
         </div>
         <?php else: ?>
-            <p>Привет <?=$_COOKIE['user']?>. Чтобы выйти нажмите <a href="/exit.php">здесь</a>.</p>
+            <p>Привет <?=$_COOKIE['user']?>. Чтобы выйти нажмите <a href="php/exit.php">здесь</a>.</p>
 
         <?php endif;?>
         </div>
